@@ -21,4 +21,4 @@ __Universitat Rovira i Virgili__
 
 [Faculty of Tourism and Geography](https://www.ftg.urv.cat/en/)
 
-(Joanot Martorell, 15, 43480 Vila-seca, Tarragona, Spain)
+(Joanot Martorell, 15, 43480 Vila-seca, Tarragona, Spain).
