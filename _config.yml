@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Aitor Àvila Callau"
   avatar           : "profile.png"
   bio              : "Your biography for the left-hand sidebar"
   location         : "Location"
@@ -218,7 +218,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _publicaciones
   - scope:
       path: ""
       type: publications
