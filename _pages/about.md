@@ -14,7 +14,9 @@ Aitor Àvila se graduó en Geografía y Ordenación del Territorio en 2017 por l
 
 Contact
 ======
-__e-mail__: aitor.avila@urv.cat 
+__e-mail__: aitor.avila@urv.cat
+
 __Universitat Rovira i Virgili__
+
 [Faculty of Tourism and Geography](https://www.ftg.urv.cat/en/)
 (Joanot Martorell, 15, 43480 Vila-seca, Tarragona, Spain).
