@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Aitor Àvila Callau"
   avatar           : "profile.png"
-  bio              : "Geographer and predoctoral researcher"
-  employer         : "Department of Geography_(Universitat Rovira i Virgili)"
+  bio              : "Geographer and predoctoral researcher at the Universitat Rovira i Virgili"
+  employer         : "Department of Geography"
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  email            : "aitor.avila@urv.cat"
+  researchgate     : "https://www.researchgate.net/profile/Aitor-Callau"
   uri              :
   bitbucket        :
   codepen          :
@@ -95,20 +95,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : 
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "https://es.linkedin.com/in/aitor-avila-callau-411065a8"
+  orcid            : "https://orcid.org/0000-0002-6582-3353"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          :
   vine             :
   weibo            :
   xing             :
