@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Aitor Àvila"
+title                    : "Aitor Àvila, PhD student"
 title_separator          : "-"
 name                     : &name "Aitor Àvila Callau"
 description              : &description "personal description"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Aitor Àvila Callau"
   avatar           : "profile.png"
-  bio              : "Geógrafo y investigador predoctoral en el Departamento de Geografía de la Universitat Rovira i Virgili"
-  employer         :
+  bio              : "Geographer and predoctoral researcher"
+  employer         : "Department of Geography - Universitat Rovira i Virgili"
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
   email            :
