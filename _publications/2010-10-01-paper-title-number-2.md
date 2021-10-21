@@ -1,15 +1,12 @@
 ---
-title: "Paper Title Number 2"
+title: "Dataset on georeferenced and tagged photographs for ecosystem services assessment, Ebro Delta, N-E Spain"
 collection: publications
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+excerpt: ''
+date: 2020-10-01
+venue: 'Data in Brief'
+paperurl: 'https://www.sciencedirect.com/science/article/pii/S235234092030072X?via%3Dihub'
+citation: 'Serrano Giné, D.; Pérez Albert, M.Y.; Àvila Callau, A.; Jurado Rota, J. (2020). &quot;Dataset on georeferenced and tagged photographs for ecosystem services assessment, Ebro Delta, N-E Spain.&quot; <i>Data in Brief</i>. 29, 105-178, p. 1-6.'
 ---
-This paper is about the number 2. The number 3 is left for future work.
-
 [Download paper here](http://academicpages.github.io/files/paper2.pdf)
 
-Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
