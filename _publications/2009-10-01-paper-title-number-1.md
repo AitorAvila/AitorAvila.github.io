@@ -1,15 +1,15 @@
 ---
-title: "Paper Title Number 1"
+title: "Landscape characterization using photographs from crowdsourced platforms: content analysis of social media photographs"
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+date: 2019
+venue: 'Open Geosciences'
+paperurl: 'https://www.degruyter.com/document/doi/10.1515/geo-2019-0046/html'
+citation: 'Àvila Callau, A.; Pérez Albert, M.Y.; Jurado Rota, J.; Serrano Giné, D. (2019). &quot;Landscape characterization using photographs from crowdsourced platforms: content analysis of social media photographs.&quot; <i>Open Geosciences</i>. 11, 1, p. 558-571.'
 ---
 This paper is about the number 1. The number 2 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](https://www.degruyter.com/document/doi/10.1515/geo-2019-0046/pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: Àvila Callau, A.; Pérez Albert, M.Y.; Jurado Rota, J.; Serrano Giné, D. (2019). "Landscape characterization using photographs from crowdsourced platforms: content analysis of social media photographs." <i>Open Geosciences</i>. 11, 1, p. 558-571.
