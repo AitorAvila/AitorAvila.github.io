@@ -8,5 +8,5 @@ venue: 'Data in Brief'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S235234092030072X?via%3Dihub'
 citation: 'Serrano Giné, D.; Pérez Albert, M.Y.; Àvila Callau, A.; Jurado Rota, J. (2020). &quot;Dataset on georeferenced and tagged photographs for ecosystem services assessment, Ebro Delta, N-E Spain.&quot; <i>Data in Brief</i>. 29, 105-178, p. 1-6.'
 ---
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
+[Download paper here](https://www.sciencedirect.com/science/article/pii/S235234092030072X/pdfft?isDTMRedir=true&download=true)
 
