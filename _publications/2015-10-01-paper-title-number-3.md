@@ -1,15 +1,13 @@
 ---
-title: "Paper Title Number 3"
+title: "Quality of GNSS Traces from VGI: A Data Cleaning Method Based on Activity Type and User Experience"
 collection: publications
 permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+excerpt: ''
+date: 2020-12-01
+venue: 'ISPRS International Journal of Geo-Information'
+paperurl: 'https://www.mdpi.com/2220-9964/9/12/727'
+citation: 'Àvila Callau, A.; Pérez-Albert, Y.; Serrano Giné, D. (2020). &quot;Quality of GNSS Traces from VGI: A Data Cleaning Method Based on Activity Type and User Experience.&quot; <i>ISPRS International Journal of Geo-Information</i>. 9, 727.'
 ---
-This paper is about the number 3. The number 4 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper3.pdf)
+[Download paper here](https://www.mdpi.com/2220-9964/9/12/727/pdf)
 
-Recommended citation: Your Name, You. (2015). "Paper Title Number 3." <i>Journal 1</i>. 1(3).
