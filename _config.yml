@@ -6,8 +6,6 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-header                   :  
-image: images/paisaje2.png
 locale                   : "en-US"
 title                    : "Aitor Àvila, PhD student"
 title_separator          : "-"
