@@ -15,7 +15,7 @@ Contact
 ======
 __e-mail__: aitor.avila@urv.cat
 
-![](https://github.com/AitorAvila/personalwebsite/images/URV/Logo4.png) 
+![](https://github.com/AitorAvila/personalwebsite/blob/master/images/URV-Logo4.png) 
 
 [Faculty of Tourism and Geography](https://www.ftg.urv.cat/en/)
 (Joanot Martorell, 15, 43480 Vila-seca, Tarragona, Spain).
