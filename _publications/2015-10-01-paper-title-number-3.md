@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2015-10-01-paper-title-number-3
 excerpt: ''
 date: 2020-12-01
-venue: 'ISPRS International Journal of Geo-Information'
+venue: '__ISPRS International Journal of Geo-Information__'
 paperurl: 'https://www.mdpi.com/2220-9964/9/12/727'
 citation: 'Àvila Callau, A.; Pérez-Albert, Y.; Serrano Giné, D. (2020). &quot;Quality of GNSS Traces from VGI: A Data Cleaning Method Based on Activity Type and User Experience.&quot; <i>ISPRS International Journal of Geo-Information</i>. 9, 727.'
 ---
