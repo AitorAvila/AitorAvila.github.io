@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 header:
-    image_fullwidth: images/paisaje2.png
+    image_fullwidth: /images/paisaje2.png
 ---
 
 ![paisaje](images/paisaje2.png)
