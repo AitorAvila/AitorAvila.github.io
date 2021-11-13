@@ -8,7 +8,6 @@ redirect_from:
   - /about.html
 header:
 image: /images/image-alignment-1200x4002.jpg
-
 ---
 
 ![paisaje]()
