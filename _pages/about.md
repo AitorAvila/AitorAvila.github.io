@@ -10,7 +10,7 @@ header:
   image: /header3.jpg
 ---
 
-![paisaje](images/mapa2_nouse.jpeg)
+![paisaje](images/mapa_negre2.jpeg)
 
 ## A brief summary...
 
