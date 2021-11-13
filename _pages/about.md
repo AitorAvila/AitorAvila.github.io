@@ -8,7 +8,6 @@ redirect_from:
   - /about.html
 header:
   image: /header3.jpg
-  overlay_filter: 0.5
 ---
 
 ![paisaje](images/about.png)
