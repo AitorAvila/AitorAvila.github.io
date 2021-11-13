@@ -7,10 +7,11 @@ redirect_from:
   - /about/
   - /about.html
 header:
-  image                  : ![holaa](images/image-alignment-1200x4002.jpg)
+image: /images/image-alignment-1200x4002.jpg
+
 ---
 
-![paisaje](images/paisaje2.png)
+![paisaje]()
 
 ## A brief summary...
 
