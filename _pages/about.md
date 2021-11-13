@@ -8,6 +8,7 @@ redirect_from:
   - /about.html
 header:
   image: /header3.jpg
+  overlay_color: "#333"
 ---
 
 ![paisaje](images/about.png)
