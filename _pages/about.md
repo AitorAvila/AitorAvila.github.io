@@ -6,6 +6,8 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+header:
+    image_fullwidth: paisaje2.png
 ---
 
 ![paisaje](images/paisaje2.png)
