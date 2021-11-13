@@ -7,6 +7,14 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
+<div class="panel radius" markdown="1">
+**Índice**
+{: #toc }
+*  TOC
+{:toc}
+</div>
+
 ![paisaje](images/paisaje2.png)
 
 Aitor Àvila graduated in __Geography and Spatial Planning__ in 2017 from the [Universitat Rovira i Virgili](https://www.urv.cat/en/). During the degree he showed a special interest in Geographic Information Systems (GIS) and decided to specialize in this field through a master's degree in GIS and Remote Sensing offered by the Universitat Autónoma de Barcelona (2017-2018). At present, he is studying in the [Doctoral Program of City, Territory and Sustainable Planning (URV)](http://www.doctor.urv.cat/en/prospective-students/courses/7724/index/) and at the same time enjoys the "[aid for pre-doc contracts for the training of doctors](http://www.aei.gob.es/portal/site/MICINN/menuitem.dbc68b34d11ccbd5d52ffeb801432ea0/?vgnextoid=131955e2d5e01610VgnVCM1000001d04140aRCRD&lang_choosen=en)" of Spanish Ministry of Science and Innovation (ref. PRE2018-084802), that allow him to establish a contractual relationship as a predoctoral researcher with the URV (from 2019 to 2023). 
