@@ -3,6 +3,8 @@ layout: archive
 title: ""
 permalink: /publications/
 author_profile: true
+header: 
+  image: /publications_header.jpg
 ---
 
 ![header2](/images/publications.png)
