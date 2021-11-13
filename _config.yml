@@ -15,6 +15,8 @@ url                      : https://aitoravila.github.io # the base hostname & pr
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aitoravila.github.io"
 teaser                   : /images/paisaje2.png
+header                   : 
+image                    : /images/paisaje2.png
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
