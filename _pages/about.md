@@ -6,8 +6,6 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-header:
-    teaser: /images/paisaje2.png
 ---
 
 ![paisaje](images/paisaje2.png)
