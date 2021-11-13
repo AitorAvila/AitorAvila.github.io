@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 header:
-    image_fullwidth: AitorAvila.github.io/images/paisaje2.png
+    teaser: /images/paisaje2.png
 ---
 
 ![paisaje](images/paisaje2.png)
