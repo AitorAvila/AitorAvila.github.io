@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 header:
-  image                  : /images/paisaje2.png
+  image                  : https://github.com/AitorAvila/AitorAvila.github.io/blob/751c499b2f177935fb7531a75d537a6de3e794b3/images/paisaje2.png
 ---
 
 ![paisaje](images/paisaje2.png)
