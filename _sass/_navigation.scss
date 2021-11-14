@@ -88,12 +88,12 @@
       border-radius: 0;
 
       &:hover {
-        color: #eb420e;
+        color: $link-color-hover;
       }
 
       &.current {
         color: #fff;
-        background: #eb420e;
+        background: $primary-color;
       }
 
       &.disabled {
