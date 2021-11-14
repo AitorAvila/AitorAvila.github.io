@@ -16,7 +16,7 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aitoravila.github.io"
 teaser                   : "/images/image-alignment-1200x4002.jpg"
 theme                    : minimal-mistakes-jekyll
-minimal_mistakes_skin    : "default" # "contrast"
+minimal_mistakes_skin    : "contrast"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
