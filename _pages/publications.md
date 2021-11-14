@@ -7,7 +7,7 @@ header:
   image: /publications_header2.jpg
 ---
 
-![header2](/images/publications2.png)
+![header2](/images/publications3.png)
 
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
