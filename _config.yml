@@ -15,6 +15,7 @@ url                      : https://aitoravila.github.io # the base hostname & pr
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aitoravila.github.io"
 teaser                   : "/images/image-alignment-1200x4002.jpg"
+minimal_mistakes_skin    : "contrast"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
