@@ -10,7 +10,7 @@ header:
   image: /header3.jpg
 ---
 
-![paisaje](images/about.png)
+![paisaje](images/about2.png)
 
 ## A brief summary...
 
