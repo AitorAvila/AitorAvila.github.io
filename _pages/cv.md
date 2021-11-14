@@ -9,7 +9,7 @@ header:
   image: /header_cv.jpg
 ---
 
-![paisaje](images/cv.png)
+![cv](/images/cv.png)
 
 {% include base_path %}
 
