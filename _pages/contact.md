@@ -8,8 +8,13 @@ redirect_from:
 ---
 
 
+Contact
+======
+__e-mail__: aitor.avila@urv.cat
 
-### Insert Tag
+![logo](images/URV-Logo6.png)
 
-This tag should denote <ins>inserted</ins> text.
+[Faculty of Tourism and Geography](https://www.ftg.urv.cat/en/)
+(Joanot Martorell, 15, 43480 Vila-seca, Tarragona, Spain).
+
 
