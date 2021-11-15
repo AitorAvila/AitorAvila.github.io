@@ -19,9 +19,12 @@ header:
   
 ## keywords
 
-> Geographic Information Systems 
-> Voluntereed Geographic Information 
-> Cultural Ecosystem Services 
+> Geographic Information Systems
+ 
+> Voluntereed Geographic Information
+
+> Cultural Ecosystem Services
+
 > Landscape 
 
 
