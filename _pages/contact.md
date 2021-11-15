@@ -7,6 +7,8 @@ redirect_from:
   - /markdown.html
 ---
 
+![header](/images/contact.png)
+
 __e-mail__: aitor.avila@urv.cat
 
 ![logo](/images/URV-Logo6.png)
