@@ -32,6 +32,27 @@ header:
 
 ## Research projects
 
+1. __“Servicios ecosistémicos culturales, salud y bienestar en zonas urbanas y periurbanas con clústeres petroquímicos” - RESTAURA__
+- __Reference__: _PID2020-114363GB-I00_
+- __Financing entity__: Spanish Ministry of Science and Innovation
+- __Main researcher__: Yolanda Pérez Albert (Depto. de Geografía. URV)
+- __Duration__: 2021 - 2023
+- __Type of participation__: predoctoral researcher
+
+2. __“El paisaje como valor colectivo. Análisis de su significado, usos y percepción social” - CHORA__
+- __Reference__: _CSO2017-82411-P_
+- __Financing entity__: Spanish Ministry of Science and Innovation
+- __Main researcher__: Yolanda Pérez Albert (Depto. de Geografía. URV)
+- __Duration__: 2018 - 2021
+- __Type of participation__: predoctoral researcher
+
+3. __“Los paisajes protegidos y construidos” - SPATIUM__
+- __Reference__: _CSO2014-52721-P_
+- __Financing entity__: Spanish Ministry of Economy and Competitiveness
+- __Main researcher__: Yolanda Pérez Albert (Depto. de Geografía. URV)
+- __Duration__: 2015 - 2017
+- __Type of participation__: technician
+
 ## Publications
 
 1. Àvila Callau, A.; Pérez-Albert, Y.; Serrano Giné, D. (2020). __Quality of GNSS Traces from VGI: A Data Cleaning Method Based on Activity Type and User Experience__. _ISPRS Int. J. Geo-Inf._, 9, 727. DOI: [https://doi.org/10.3390/ijgi9120727](https://doi.org/10.3390/ijgi9120727)
@@ -104,13 +125,13 @@ header:
 ## Teaching
 
 1. __Inequality and Cooperation__
-- __Estudios__: [Degree in Geography, Territorial Analysis and Sustainability](https://www.urv.cat/es/estudios/grados/oferta/graudegeografia/); [Degree in Tourism and Hospitality Management](https://www.urv.cat/es/estudios/grados/oferta/graudeturisme/)
+- __Degrees__: [Degree in Geography, Territorial Analysis and Sustainability](https://www.urv.cat/es/estudios/grados/oferta/graudegeografia/); [Degree in Tourism and Hospitality Management](https://www.urv.cat/es/estudios/grados/oferta/graudeturisme/)
 - __Total of ECTS__: 6
 - __Course__: 2019-2020 and 2020-2021
 - __University__: Universitat Rovira i Virgili
 
 2. __Territory and Culture__
-- __Estudios__: [Degree in Geography, Territorial Analysis and Sustainability](https://www.urv.cat/es/estudios/grados/oferta/graudegeografia/); [Degree in Tourism and Hospitality Management](https://www.urv.cat/es/estudios/grados/oferta/graudeturisme/)
+- __Degrees__: [Degree in Geography, Territorial Analysis and Sustainability](https://www.urv.cat/es/estudios/grados/oferta/graudegeografia/); [Degree in Tourism and Hospitality Management](https://www.urv.cat/es/estudios/grados/oferta/graudeturisme/)
 - __Total of ECTS__: 3
 - __Course__: 2021-2022
 - __University__: Universitat Rovira i Virgili
