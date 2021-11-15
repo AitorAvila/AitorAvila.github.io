@@ -1,6 +1,6 @@
 ---
 permalink: /contact/
-title: "Contact"
+title: ""
 author_profile: true
 redirect_from: 
   - /md/
