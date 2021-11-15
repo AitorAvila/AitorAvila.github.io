@@ -103,6 +103,15 @@ header:
   
 ## Teaching
 
+1. __Inequality and Cooperation__
+- __Estudios__: [Degree in Geography, Territorial Analysis and Sustainability](https://www.urv.cat/es/estudios/grados/oferta/graudegeografia/); [Degree in Tourism and Hospitality Management](https://www.urv.cat/es/estudios/grados/oferta/graudeturisme/)
+- __Total of ECTS__: 6
+- __Course__: 2019-2020 and 2020-2021
+- __University__: Universitat Rovira i Virgili
 
-  
+2. __Territory and Culture__
+- __Estudios__: [Degree in Geography, Territorial Analysis and Sustainability](https://www.urv.cat/es/estudios/grados/oferta/graudegeografia/); [Degree in Tourism and Hospitality Management](https://www.urv.cat/es/estudios/grados/oferta/graudeturisme/)
+- __Total of ECTS__: 3
+- __Course__: 2021-2022
+- __University__: Universitat Rovira i Virgili
 
