@@ -24,11 +24,3 @@ Aitor Àvila se graduó en __Geografía y Ordenación del Territorio__ en 2017 p
 
 La tesis está relacionada con la línea de investigación que aborda el __estudio del territorio, el paisaje y los Servicios Ecosistémicos Culturales (SEC) mediante Información Geográfica Voluntaria (IGV) y con los SIG como principal herramienta__. También forma parte del [Grupo de Investigación de Análisis Territorial y Estudios Turísticos (GRATET)](http://www.gratet.urv.cat/ca/) y ha participado como miembro del equipo de trabajo en el proyecto de investigación llamado "[El paisaje como valor colectivo. Análisis de su significado, usos y percepción social: CHORA](https://choramineco.wixsite.com/chora)" (ref. CSO2017-82411-P) del Departamento de Geografía de la URV. Actualmente, participa como miembro en otro proyecto, financiado por el Ministerio de Ciencia e Innovación, llamado "[Servicios ecosistémicos culturales, salud y bienestar en zonas urbanas y periurbanas con clústeres petroquímicos: RESTAURA](https://gratet.github.io/restaura/)" (ref. PID2020-114363GB-I00).
 
-Contact
-======
-__e-mail__: aitor.avila@urv.cat
-
-![logo](images/URV-Logo6.png)
-
-[Faculty of Tourism and Geography](https://www.ftg.urv.cat/en/)
-(Joanot Martorell, 15, 43480 Vila-seca, Tarragona, Spain).
