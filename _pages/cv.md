@@ -17,7 +17,7 @@ header:
 - Official Master in Remote Sensing and Geographic Information Systems. _Universitat Autònoma de Barcelona. 2018_
 - Degree in Geography and Spatial Planning. Mention in Territorial Planning and Local Development. _Universitat Rovira i Virgili. 2017_
   
-## keywords
+## Keywords
 
 > Geographic Information Systems
  
@@ -25,20 +25,20 @@ header:
 
 > Cultural Ecosystem Services
 
+> Spatial Planning
+
 > Landscape 
 
+## Publications
 
-
-Publications
-======
 
   
-Talks
-======
+## Talks
+
 
   
-Teaching
-======
+## Teaching
+
 
   
 
