@@ -40,7 +40,7 @@ header:
 - __Place and date__: Faculty of Tourism and Geography, January 30 (2020)
 
 3. __The analysis of the perception of the landscape through Voluntereed Geographic Information (VGI) available on social platforms. The case of the Ebro Delta (Tarragona, Spain)__
-- __Type__: talk/presentation in the final seminar of the project “Los paisajes protegidos y construidos”.
+- __Type__: talk/presentation in the final seminar of the project “Los paisajes protegidos y construidos. SPATIUM”.
 - __Organizing entity__: Universitat Rovira i Virgili
 - __Place and date__: Faculty of Tourism and Geography, June 19 (2018)
 
@@ -54,4 +54,17 @@ header:
 - __Organizing entity__: Pécs University and Universitat Rovira i Virgili
 - __Place and date__: Pécs University (Hungary), October 06-13 (2019)
 
-6. 
+6. __Georeferenced images of social networks as a data source for the analysis of Cultural Ecosystem Services. The case of the peri-urban of Tarragona__
+- __Type__: talk/presentation in the final seminar of the project “El paisaje como valor colectivo. Análisis de su significado, usos y percepción social. CHORA”.
+- __Organizing entity__: Universitat Rovira i Virgili
+- __Place and date__: Faculty of Tourism and Geography, June 16 (2021)
+
+7. __Assessment of outdoor sports recreation and Cultural Ecosystem Services in peri-urban areas through geolocated data from social media__
+- __Type__: talk/presentation in the activity called “After-lunch talks of CENSE”
+- __Organizing entity__: NOVA University of Lisboa, Center for Environmental and Sustainability Research (CENSE) 
+- __Place and date__: NOVA School of Science and Technology (FCT NOVA), November 4 (2021)
+
+8. __The smartphone, a tsunami of geobigdata in social networks: how to exploit the geolocated data provided by smartphones__
+- __Type__: talks in the activity called “Scientific conferences aimed at high school institutes”
+- __Organizing entity__: Universitat Rovira i Virgili
+- __Place and date__: Various institutes in the province of Tarragona (Spain), 2019-2020
