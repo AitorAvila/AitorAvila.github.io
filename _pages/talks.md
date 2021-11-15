@@ -11,17 +11,17 @@ header:
 
 ## Conference talks
 
-1. __“XXVII Congreso de la Asociación Española de Geografía”__.
+1. __“Propuesta metodológica de un SIGPP para analizar el uso público y la percepción del paisaje en Tarragona”__.
 - __Contribution__: Academic poster
-- __Title__: “Propuesta metodológica de un SIGPP para analizar el uso público y la percepción del paisaje en Tarragona”
+- __Congress__: “XXVII Congreso de la Asociación Española de Geografía”
 - __Autors__: Aitor Àvila Callau, Yolanda Pérez Albert, Joan Alberich González
 - __Place and date__: Ciudad de La Laguna (Tenerife, Spain), 14-17 December (2021)
 - __Proceedings (DOI)__: _in process_
 
 
-2. __“XXVII Congreso de la Asociación Española de Geografía”__.
+2. __“La calidad de la IGV para el análisis territorial. El caso de Wikiloc”__.
 - __Contribution__: Academic poster
-- __Title__: “La calidad de la IGV para el análisis territorial. El caso de Wikiloc”
+- __Congress__: “XXVII Congreso de la Asociación Española de Geografía”
 - __Autors__: Aitor Àvila Callau, Yolanda Pérez Albert, David Serrano
 - __Place and date__: Ciudad de La Laguna (Tenerife, Spain), 14-17 December (2021)
 - __Proceedings (DOI)__: _in process_
