@@ -18,6 +18,7 @@ header:
 - __Place and date__: Ciudad de La Laguna (Tenerife, Spain), 14-17 December (2021)
 - __Proceedings (DOI)__: _in process_
 
+
 2. __“XXVII Congreso de la Asociación Española de Geografía”__.
 - __Contribution__: Academic poster
 - __Title__: “La calidad de la IGV para el análisis territorial. El caso de Wikiloc”
