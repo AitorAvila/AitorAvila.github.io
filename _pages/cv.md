@@ -41,7 +41,7 @@ header:
   
 ## Talks
 
-### Conference talks
+### Conference talks:
 
 1. __“XXVII Congreso de la Asociación Española de Geografía”__.
 - __Contribution__: Academic poster
@@ -58,7 +58,7 @@ header:
 - __Place and date__: Ciudad de La Laguna (Tenerife, Spain), 14-17 December (2021)
 - __Proceedings (DOI)__: _in process_
 
-### Other talks and presentations
+### Other talks and presentations:
 
 1. __Assessment of outdoor sports recreation and Cultural Ecosystem Services in peri-urban areas through geolocated data from social media__
 - __Type__: talk/presentation in the activity called “After-lunch talks of CENSE”
