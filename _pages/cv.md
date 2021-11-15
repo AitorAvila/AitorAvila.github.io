@@ -29,6 +29,8 @@ header:
 
 > Landscape 
 
+## Research projects
+
 ## Publications
 
 1. Àvila Callau, A.; Pérez-Albert, Y.; Serrano Giné, D. (2020). __Quality of GNSS Traces from VGI: A Data Cleaning Method Based on Activity Type and User Experience__. _ISPRS Int. J. Geo-Inf._, 9, 727. DOI: [https://doi.org/10.3390/ijgi9120727](https://doi.org/10.3390/ijgi9120727)
