@@ -10,7 +10,7 @@ redirect_from:
 ![header](/images/contact.png)
 
 ## e-mail 
-<a href="mailto:aitor.avila@urv.cat">Aitor</a>
+<a href="mailto:aitor.avila@urv.cat">aitor.avila@urv.cat</a>
 
 ## Mailing address
 __Universitat Rovira i Virgili__. [Department of Geography](https://www.geografia.urv.cat/ca/)
