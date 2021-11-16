@@ -12,6 +12,7 @@ redirect_from:
 __e-mail__: aitor.avila@urv.cat
 
 ![logo](/images/URV-Logo6.png)
+
 < Universitat Rovira i Virgili. Department of Geography
 
 [Faculty of Tourism and Geography](https://www.ftg.urv.cat/en/)
