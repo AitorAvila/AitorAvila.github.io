@@ -28,7 +28,11 @@ header:
 
 > Spatial Planning
 
-> Landscape 
+> Landscape
+
+~~~
+Geographic Information Systems, Voluntereed Geographic Information
+~~~
 
 ## Research projects
 
