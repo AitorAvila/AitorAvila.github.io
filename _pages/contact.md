@@ -10,17 +10,17 @@ redirect_from:
 ![header](/images/contact.png)
 
 ## e-mail 
-aitor.avila@urv.cat
+[aitor.avila@urv.cat](aitor.avila@urv.cat)
 
 ## Mailing address
-> Universitat Rovira i Virgili. [Department of Geography](https://www.geografia.urv.cat/ca/)
+__Universitat Rovira i Virgili__. [Department of Geography](https://www.geografia.urv.cat/ca/)
 
 ![logo](/images/URV-Logo6.png)
 
 [Faculty of Tourism and Geography](https://www.ftg.urv.cat/en/)
-_C/Joanot Martorell, 15
-43480 Vila-seca
-Tarragona (Spain)_
+(_C/Joanot Martorell, 15,
+43480, Vila-seca,
+Tarragona, Spain_)
 
 ![mapa](/images/web.png)
 
