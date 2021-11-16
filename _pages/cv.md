@@ -30,10 +30,6 @@ header:
 
 > Landscape
 
-~~~
-Geographic Information Systems, Voluntereed Geographic Information
-~~~
-
 ## Research projects
 
 1. __“Servicios ecosistémicos culturales, salud y bienestar en zonas urbanas y periurbanas con clústeres petroquímicos” - RESTAURA__
