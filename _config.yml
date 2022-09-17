@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Aitor Àvila, PhD student"
+title                    : "Aitor Àvila, PhD"
 title_separator          : "-"
 name                     : &name "Aitor Àvila Callau"
 description              : &description "personal description"
@@ -83,7 +83,7 @@ analytics:
 author:
   name             : "Aitor Àvila Callau"
   avatar           : "aitor_defi3.jpg"
-  bio              : "Geographer and predoctoral researcher"
+  bio              : "Geographer and postdoctoral researcher"
   employer         : "Department of Geography"
   pubmed           : "https://www.scopus.com/authid/detail.uri?authorId=57214440268"
   googlescholar    : "http://yourfullgooglescholarurl.com"
