@@ -1,14 +1,851 @@
----
-layout: archive
-title: "Portfolio"
-permalink: /portfolio/
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
 
-{% include base_path %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../image/favicon.ico"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Encuesta periurbano</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.9.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+    <link type="text/css" rel="stylesheet" href="../css/jquery-ui.css" />
+    <link type="text/css" rel="stylesheet" href="../css/map.css" />
 
+
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/functions.js"></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx7GDvySBEw9cOFx2DLcbcGpfoyvFvegA&libraries=places,geometry"></script>
+
+    <!--   <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,visualization,drawing,places&sensor=false"></script> -->
+
+    <script>
+        var coord = new google.maps.LatLng(41.163485, 1.222913);
+
+        function uuidv4() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random() * 16 | 0,
+                    v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        var user_uid = uuidv4();
+
+        var mapLabels = ['paisaje', 'actividades_recreativas', 'adecuacion_equipamientos', 'conflictos_potenciales']; // ordenat per id map
+
+        var current_lang = 'es';
+
+    </script>
+
+</head>
+
+<body>
+    <section>
+        <div id="container" class="container">
+            <div class="row container mt-3">
+                <div class="col-12">
+                    <div class="mb-3">
+                        <p id="selected_language"></p>
+                    </div>
+                    <img class="w-100" src="../images/LOGO_COMPLET_imatge_propia4.png" alt="">
+                    <div id="cabecera">
+                        <h1 class="pt-2 text-center pb-4">
+                            <span class="es">Uso público y percepción del paisaje en el periurbano del Camp de Tarragona</span>
+                            <span class="ca d-none">Ús públic i percepció del paisatge al periurbà del Camp de Tarragona</span>
+                        </h1>
+                        <p class="mb-1">
+                            <b>
+                                <span class="es">IMPORTANTE:</span>
+                                <span class="ca d-none">IMPORTANT:</span>
+                            </b>
+                            <span class="es">esta encuesta se ha de realizar en un ordenador utilizando Google Chrome o Mozilla Firefox. No está adaptada para dispositivos móviles como teléfonos inteligentes o tabletas.</span>
+                            <span class="ca d-none">aquesta enquesta s'ha de fer en un ordinador utilitzant Google Chrome o Mozilla Firefox. No està adaptada per a dispositius mòbils com telèfons intel·ligents o tauletes.</span>
+                        </p>
+                        <p class="small-text">
+                            <span class="es">Los datos serán exclusivamente de uso académico en el marco del Proyecto de investigación CHORA con referencia CSO2017-82411-P (<a href="https://choramineco.wixsite.com/chora">https://choramineco.wixsite.com/chora</a>). El tratamiento de los mismos se ajustará a la ley orgánica 3/2018, de 5 de diciembre, de protección de datos personales y garantía de los derechos digitales.</span>
+                            <span class="ca d-none">Les dades seran exclusivament d'ús acadèmic en el marc del Projecte d'investigació CHORA amb referencia CSO2017-82411-P (<a href="https://choramineco.wixsite.com/chora">https://choramineco.wixsite.com/chora</a>). El tractament de les mateixes s'ajustarà a la llei orgànica 3/2018, de 5 de desembre, de protecció de dades personals i garantia dels drets digitals.</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row container mb-5">
+                <div id="formulario" class="col-12">
+                    <form role="form" id="form_encuesta" method="POST">
+                        <div id="container_email_sorteo" class="form-group">
+                            <label class="control-label title" for="email_sorteo">1.
+                                <span class="es">Si desea participar en el sorteo de una actividad lúdica en el Parque Natural del Delta del Ebro patrocinada por DELTANATUR (<a href="https://www.deltanatur.es/">https://www.deltanatur.es/</a>) indique su dirección de CORREO ELECTRÓNICO a continuación. Más información del sorteo <a href="https://drive.google.com/file/d/1wNnOmLsZXEtjqUgaRA4Va-S7sMtmENNN/view?usp=sharing">AQUÍ.</a></span>
+                                <span class="ca d-none">Si vol participar en el sorteig d’una activitat lúdica al Parc Natural del Delta de l’Ebre patrocinada per DELTANATUR (<a href="https://www.deltanatur.es/">https://www.deltanatur.es/</a>) indiqui la seva adreça de CORREU ELECTRÒNIC a continuació. Més informació del sorteig <a href="https://drive.google.com/file/d/1bEHfWjWN86i_HpEWWGtIbR07GbvcLygN/view?usp=sharing">AQUÍ.</a></span>
+                            </label>
+                            <input type="text" class="form-control" id="email_sorteo" name="email_sorteo" placeholder="Introduzca su respuesta" value="" />
+                            <p id="error_email" class="pl-4 d-none error-input"></p>
+                        </div>
+                        <div id="container_codigo_postal" class="form-group">
+                            <label class="control-label title" for="codigo_postal"><span class="required">*</span>2.
+                                <span class="es">Código postal (si no lo sabe o no lo recuerda puede escribir su localidad de residencia)</span>
+                                <span class="ca d-none">Codi postal (Si no el coneix o no el recorda pot escriure la seva localitat de residència)</span>
+                            </label>
+                            <input type="text" class="form-control" id="codigo_postal" name="codigo_postal" placeholder="Introduzca su respuesta" value="" />
+                            <p id="error_codigo_postal" class="pl-4 d-none error-input"></p>
+                        </div>
+                        <div id="container_edad" class="form-group">
+                            <label class="control-label title" for="edad"><span class="required">*</span>3.
+                                <span class="es">Edad</span>
+                                <span class="ca d-none">Edat</span>
+                            </label>
+                            <input type="number" class="form-control" id="edad" name="edad" placeholder="Introduzca su respuesta" value="" />
+                            <p id="error_edad" class="pl-4 d-none error-input"></p>
+                        </div>
+                        <div id="sexo" class="form-group">
+                            <label class="control-label title" for="sexo"><span class="required">*</span>4.
+                                <span class="es">Sexo</span>
+                                <span class="ca d-none">Sexe</span>
+                            </label>
+                            <p id="error_sexo" class="pl-4 d-none error"></p>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
+                                    <label class="form-check-label" for="masculino">
+                                        <span class="es">Masculino</span>
+                                        <span class="ca d-none">Masculí</span>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="femenino" value="femenino">
+                                    <label class="form-check-label" for="femenino">
+                                        <span class="es">Femenino</span>
+                                        <span class="ca d-none">Femení</span>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="nsnc" value="nsnc">
+                                    <label class="form-check-label" for="nsnc">
+                                        <span class="es">NS/NC</span>
+                                        <span class="ca d-none">NS/NC</span>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="otro" value="otro">
+                                    <label class="form-check-label" for="otro">
+                                        <span class="es">Otro</span>
+                                        <span class="ca d-none">Altres</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nivel_estudios" class="form-group">
+                            <label class="control-label title" for="nivel_estudios"><span class="required">*</span>5.
+                                <span class="es">¿Cuál es el nivel de estudios más alto que ha completado?</span>
+                                <span class="ca d-none">Quin és el nivell d'estudis més alt que ha completat?</span>
+                            </label>
+                            <p id="error_nivel_estudios" class="pl-4 d-none error"></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="nivel_estudios" id="sinEstudios" value="sinEstudios">
+                                <label class="form-check-label" for="sinEstudios">
+                                    <span class="es">Sin estudios</span>
+                                    <span class="ca d-none">Sense estudis</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="nivel_estudios" id="estPrimerGrado" value="estPrimerGrado">
+                                <label class="form-check-label" for="estPrimerGrado">
+                                    <span class="es">Estudios de primer grado (Graduado Escolar)</span>
+                                    <span class="ca d-none">Estudis de primer grau (Graduat Escolar)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="nivel_estudios" id="estSegundoGrado" value="estSegundoGrado">
+                                <label class="form-check-label" for="estSegundoGrado">
+                                    <span class="es">Estudios de segundo grado (ESO, Bachillerato, Ciclo Formativo de grado medio y superior)</span>
+                                    <span class="ca d-none">Estudis de segon grau (ESO, Batxillerat, Cicle Formatiu de grau mitjà i superior)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="nivel_estudios" id="estTercerGrado" value="estTercerGrado">
+                                <label class="form-check-label" for="estTercerGrado">
+                                    <span class="es">Estudios de tercer grado o universitarios (Diplomatura, Grado, Licenciatura, Máster, Doctorado).</span>
+                                    <span class="ca d-none">Estudis de tercer grau o universitaris (Diplomatura, Grau, Llicenciatura, Màster, Doctorat).</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="nivel_estudios" id="nsnc" value="nsnc">
+                                <label class="form-check-label" for="nsnc">
+                                    <span class="es">NS/NC</span>
+                                    <span class="ca d-none">NS/NC</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="situacion_laboral" class="form-group">
+                            <label class="control-label title" for="situacion_laboral"><span class="required">*</span>6.
+                                <span class="es">¿Cuál de las siguientes categorías describe mejor su situación laboral?</span>
+                                <span class="ca d-none">Quina de les següents categories descriu millor la seva situació laboral?</span>
+                            </label>
+                            <p id="error_situacion_laboral" class="pl-4 d-none error"></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="situacion_laboral" id="estudiante" value="estudiante">
+                                <label class="form-check-label" for="estudiante">
+                                    <span class="es">Estudiante</span>
+                                    <span class="ca d-none">Estudiant</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="situacion_laboral" id="cuentaAjena" value="cuentaAjena">
+                                <label class="form-check-label" for="cuentaAjena">
+                                    <span class="es">Empleado/a por cuenta ajena</span>
+                                    <span class="ca d-none">Empleat/da per compte aliè</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="situacion_laboral" id="cuentaPropia" value="cuentaPropia">
+                                <label class="form-check-label" for="cuentaPropia">
+                                    <span class="es">Empleado/a por cuenta propia</span>
+                                    <span class="ca d-none">Empleat/da per compte propi</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="situacion_laboral" id="desempleado" value="desempleado">
+                                <label class="form-check-label" for="desempleado">
+                                    <span class="es">Desempleado/a</span>
+                                    <span class="ca d-none">Aturat/da</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="situacion_laboral" id="jubilado" value="jubilado">
+                                <label class="form-check-label" for="jubilado">
+                                    <span class="es">Jubilado/a</span>
+                                    <span class="ca d-none">Jubilat/da</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="situacion_laboral" id="pensionistaOInactivos" value="pensionistaOInactivos">
+                                <label class="form-check-label" for="pensionistaOInactivos">
+                                    <span class="es">Pensionista, rentista y otros inactivos</span>
+                                    <span class="ca d-none">Pensionista, rendista i altres inactius</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="situacion_laboral" id="nsnc" value="nsnc">
+                                <label class="form-check-label" for="nsnc">
+                                    <span class="es">NS/NC</span>
+                                    <span class="ca d-none">NS/NC</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="ingreso_mensual" class="form-group">
+                            <label class="control-label title" for="ingreso_mensual"><span class="required">*</span>7.
+                                <span class="es">¿Cuál es su ingreso mensual promedio?</span>
+                                <span class="ca d-none">Quin és el seu ingrés mensual mitjà?</span>
+                            </label>
+                            <p id="error_ingreso_mensual" class="pl-4 d-none error"></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ingreso_mensual" id="sinIngresos" value="sinIngresos">
+                                <label class="form-check-label" for="sinIngresos">
+                                    <span class="es">Sin ingresos</span>
+                                    <span class="ca d-none">Sense ingressos</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ingreso_mensual" id="hasta1000brutos" value="hasta1000brutos">
+                                <label class="form-check-label" for="hasta1000brutos">
+                                    <span class="es">Hasta 1.000 euros brutos</span>
+                                    <span class="ca d-none">Fins a 1.000 euros bruts</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ingreso_mensual" id="hasta2000brutos" value="hasta2000brutos">
+                                <label class="form-check-label" for="hasta2000brutos">
+                                    <span class="es">Hasta 2.000 euros brutos</span>
+                                    <span class="ca d-none">Fins a 2.000 euros bruts</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ingreso_mensual" id="hasta3000brutos" value="hasta3000brutos">
+                                <label class="form-check-label" for="hasta3000brutos">
+                                    <span class="es">Hasta 3.000 euros brutos</span>
+                                    <span class="ca d-none">Fins a 3.000 euros bruts</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ingreso_mensual" id="hasta4000brutos" value="hasta4000brutos">
+                                <label class="form-check-label" for="hasta4000brutos">
+                                    <span class="es">Hasta 4.000 euros brutos</span>
+                                    <span class="ca d-none">Fins a 4.000 euros bruts</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ingreso_mensual" id="masde4000brutos" value="masde4000brutos">
+                                <label class="form-check-label" for="masde4000brutos">
+                                    <span class="es">Más de 4.000 euros brutos</span>
+                                    <span class="ca d-none">Més de 4.000 euros bruts</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ingreso_mensual" id="nsnc" value="nsnc">
+                                <label class="form-check-label" for="nsnc">
+                                    <span class="es">NS/NC</span>
+                                    <span class="ca d-none">NS/NC</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="frecuencia_deportiva" class="form-group">
+                            <label class="control-label title" for="frecuencia_deportiva"><span class="required">*</span>8.
+                                <span class="es">¿Con que frecuencia realiza actividades deportivas o de recreación al aire libre en esta zona (senderismo, ciclismo, etc)?</span>
+                                <span class="ca d-none">Amb quina freqüència realitza activitats esportives o de recreació a l'aire lliure en aquesta zona (senderisme, ciclisme, etc)?</span>
+                            </label>
+                            <p id="error_frecuencia_deportiva" class="pl-4 d-none error"></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="frecuencia_deportiva" id="nunca" value="nunca">
+                                <label class="form-check-label" for="nunca">
+                                    <span class="es">Nunca o casi nunca</span>
+                                    <span class="ca d-none">Mai o gairebé mai</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="frecuencia_deportiva" id="diario" value="diario">
+                                <label class="form-check-label" for="diario">
+                                    <span class="es">A diario</span>
+                                    <span class="ca d-none">Diàriament</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="frecuencia_deportiva" id="unaVezSemana" value="unaVezSemana">
+                                <label class="form-check-label" for="unaVezSemana">
+                                    <span class="es">Al menos una vez a la semana</span>
+                                    <span class="ca d-none">Almenys un cop a la setmana</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="frecuencia_deportiva" id="unaVezMes" value="unaVezMes">
+                                <label class="form-check-label" for="unaVezMes">
+                                    <span class="es">Al menos una vez al mes</span>
+                                    <span class="ca d-none">Almenys un cop al mes</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="frecuencia_deportiva" id="unaVezAño" value="unaVezAño">
+                                <label class="form-check-label" for="unaVezAño">
+                                    <span class="es">Al menos una vez al año</span>
+                                    <span class="ca d-none">Almenys un cop a l’any </span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="frecuencia_deportiva" id="nsnc" value="nsnc">
+                                <label class="form-check-label" for="nsnc">
+                                    <span class="es">NS/NC</span>
+                                    <span class="ca d-none">NS/NC</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="actividad_deportiva" class="form-group">
+                            <label class="control-label title" for="actividad_deportiva"><span class="required">*</span>9.
+                                <span class="es">¿Cuál de las siguientes actividades deportivas o de recreación al aire libre practica con mayor frecuencia?</span>
+                                <span class="ca d-none">Quina de les següents activitats esportives o de recreació a l'aire lliure practica amb més freqüència?</span>
+                            </label>
+                            <p id="error_actividad_deportiva" class="pl-4 d-none error"></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividad_deportiva" id="ningunaActividad" value="ningunaActividad">
+                                <label class="form-check-label" for="ningunaActividad">
+                                    <span class="es">No suelo practicar ninguna actividad en concreto</span>
+                                    <span class="ca d-none">No acostumo a practicar cap activitat en concret</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividad_deportiva" id="variasActividades" value="variasActividades">
+                                <label class="form-check-label" for="variasActividades">
+                                    <span class="es">Practico varias actividades y no tengo una preferida</span>
+                                    <span class="ca d-none">Practico diverses activitats i no tinc una preferida</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividad_deportiva" id="ciclismo" value="ciclismo">
+                                <label class="form-check-label" for="ciclismo">
+                                    <span class="es">Ciclismo</span>
+                                    <span class="ca d-none">Ciclisme</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividad_deportiva" id="senderismo" value="senderismo">
+                                <label class="form-check-label" for="senderismo">
+                                    <span class="es">Senderismo</span>
+                                    <span class="ca d-none">Senderisme</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividad_deportiva" id="correr" value="correr">
+                                <label class="form-check-label" for="correr">
+                                    <span class="es">Correr</span>
+                                    <span class="ca d-none">Córrer</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividad_deportiva" id="patinaje" value="patinaje">
+                                <label class="form-check-label" for="patinaje">
+                                    <span class="es">Patinaje</span>
+                                    <span class="ca d-none">Patinatge</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividad_deportiva" id="vehiculoMotorizado" value="vehiculoMotorizado">
+                                <label class="form-check-label" for="vehiculoMotorizado">
+                                    <span class="es">Actividades con vehículos motorizados</span>
+                                    <span class="ca d-none">Activitats amb vehicles motoritzats</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividad_deportiva" id="nsnc" value="nsnc">
+                                <label class="form-check-label" for="nsnc">
+                                    <span class="es">NS/NC</span>
+                                    <span class="ca d-none">NS/NC</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividad_deportiva" id="otra" value="otra">
+                                <label class="form-check-label" for="otra">
+                                    <span class="es">Otra</span>
+                                    <span class="ca d-none">Altres</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- <img class="w-100" src="../images/instrucciones1.png" alt=""> -->
+
+                        <div class="form-group">
+                            <div class="instructions">
+                                <h3 class="es">Instrucciones para las siguientes preguntas:</h3>
+                                <h3 class="ca d-none">Instruccions per a les següents preguntes:</h3>
+
+                                <p class="es">De la siguiente leyenda, indica qué percepción has tenido del paisaje, los equipamientos, las actividades realizadas y los conflictos de uso público en el periurbano. Puedes seleccionar tantos símbolos como consideres oportuno.</p>
+                                <p class="ca d-none">De la següent llegenda, indica quina percepció has tingut de el paisatge, els equipaments, les activitats realitzades i els conflictes d'ús públic en el periurbà. Pots seleccionar tants símbols com necessitis.</p>
+
+                                <p class="es">1. Haz zoom en el mapa hasta acercarte al lugar donde quieres situar el símbolo. Aparece este mensaje <img src="../images/zoom_correcto.jpg" style="width:80px;margin-bottom:-5px;" /> cuando se activa la opción de arrastrar símbolo.</p>
+                                <p class="ca d-none">1. Fes zoom al mapa fins acostar-te a el lloc on vols situar el símbol. Apareix aquest missatge <img src="../images/zoom_correcto.jpg" style="width:80px;margin-bottom:-5px;" /> quan s'activa l'opció d'arrossegar símbol.</p>
+
+                                <p class="es">2. Selecciona uno de los símbolos con el valor de percepción que hayas elegido (ponderados de rojo -negativo- a verde -positivo-) <img src="../images/legend.jpg" style="width:200px;margin-bottom:-18px;border:solid 1px #afafaf" />. </p>
+                                <p class="ca d-none">2. Selecciona un dels símbols amb el valor de percepció que has triat (ponderats de vermell -negativo- a verd -positiu-) <img src="../images/legend.jpg" style="width:200px;margin-bottom:-18px;border:solid 1px #afafaf" />. </p>
+
+                                <p class="es">3. Arrastra el símbolo y localízalo encima del mapa.</p>
+                                <p class="ca d-none">3. Arrossega el símbol i localitzeu sobre de mapa.</p>
+
+                                <p class="es">4. Indica, en el caso de que lo sepas, el nombre del lugar y/o las observaciones que consideres. Aprieta el botón 'hecho' para acabar la inserción o 'eliminar' si quieres borrar el símbolo.</p>
+                                <p class="ca d-none">4. Indica, en el cas que ho sàpigues, el nom de el lloc i / o les observacions que consideris. Prem el botó 'fet' per acabar la inserció o 'eliminar' si vols esborrar el símbol.</p>
+                            </div>
+                        </div>
+
+
+                        <div id="question-map0" class="form-group">
+                            <label class="control-label title" for="paisaje">10.
+                                <span class="es">Valore la percepción del paisaje</span>
+                                <span class="ca d-none">Valori la percepció del paisatge</span>
+                            </label>
+                            <input type="text" class="form-control" id="paisaje" name="paisaje" style='visibility:hidden' />
+
+                            <!-- INIT MAP -->
+
+
+
+                            <div class="controls">
+                                <div class="pinWrapper">
+
+                                    <div class="legend">
+                                        <div class="legend_icons_numbers">
+                                            <label class="icons_number">1</label>
+                                            <label class="icons_number">2</label>
+                                            <label class="icons_number">3</label>
+                                            <label class="icons_number">4</label>
+                                            <label class="icons_number">5</label>
+                                        </div>
+                                    </div>
+
+                                    <div id="map_inputs_0"></div>
+                                    
+                                    <script>					
+                                        document.getElementById("map_inputs_0").appendChild(createMapInput({es:"Artificial", ca:"Artificial"}, {es:"Paisaje modificado por el hombre, relacionado con el paisaje urbano, cultural o rural.", ca:"Paisatge modificat per l'home, relacionat amb el paisatge urbà, cultural o rural."}, {es:"Natural",ca:"Natural"}, {es:"Paisaje no modificado por el hombre, de costa, de montaña.", ca:"Paisatge no modificat per l'home, de costa, de muntanya."}, "a",0,0, false));
+                                        document.getElementById("map_inputs_0").appendChild(createMapInput({es:"Repulsivo", ca:"Repulsiu"}, {es:"Paisaje desagradable, con pocas vistas, sonidos y olores molestos.", ca:"Paisatge desagradable, amb poques vistes, sons i olors molestes."}, {es:"Atractivo",ca:"Atractiu"}, {es:"Paisaje con encanto, magníficas vistas, sonidos y olores agradables.", ca:"Paisatge amb encant, magnifiques vistes, sons i olors agradables."}, "b",0,0, false));
+                                        document.getElementById("map_inputs_0").appendChild(createMapInput({es:"No productivo", ca:"No productiu"}, {es:"Paisaje sin producción económica.", ca:"Paisatge sense producció econòmica"}, {es:"Productivo",ca:"Productiu"}, {es:"Paisaje con actividad y producción económica.", ca:"Paisatge amb activitat i producció econòmica."}, "c",0,0, false));                                        
+                                        document.getElementById("map_inputs_0").appendChild(createMapInput({es:"Congestionado", ca:"Congestionat"}, {es:"Espacio con exceso de visitantes.", ca:"Espai amb excés de visitants."}, {es:"Tranquilo",ca:"Tranquil"}, {es:"Espacio donde se disfruta de una experiencia tranquila, con pocos visitantes", ca:"Espai on es gaudeix d'una experiència tranquil·la, amb pocs visitants."}, "d",0,0, false));
+                                        document.getElementById("map_inputs_0").appendChild(createMapInput({es:"Aburrido", ca:"Avorrit"}, {es:"Espacio que no es capaz de divertir, que aburre o cansa.", ca:"Espai que no és capaç de divertir, que avorreix o cansa."}, {es:"Interesante",ca:"Interessant"}, {es:"Espacio que divierte, que es atrayente, cautivador.", ca:"Espai que diverteix, que és atraient, captivador."}, "e",0,0, false));
+                                        document.getElementById("map_inputs_0").appendChild(createMapInput({es:"Ruidoso", ca:"Sorollós"}, {es:"Espacio con ruidos perturbadores o molestos.", ca:"Espai amb sorolls pertorbadors o molestos."}, {es:"Silencioso",ca:"Silenciós"}, {es:"Espacio silencioso, que provoca calma.", ca:"Espai silenciós, que provoca calma."}, "f",0,0, false));
+                                        document.getElementById("map_inputs_0").appendChild(createMapInput({es:"Descuidado", ca:"Descuidat"}, {es:"Paisaje que carece de conservación.", ca:"Paisatge sense conservació"}, {es:"Preservado",ca:"Preservat"}, {es:"Paisaje cuidado y con un adecuado mantenimiento.", ca:"Paisatge cuidat i amb un adequat manteniment."}, "g",0,0, false));
+                                        document.getElementById("map_inputs_0").appendChild(createMapInput({es:"Sucio", ca:"Brut"}, {es:"Espacio con acumulación de basura.", ca:"Espai amb acumulació d'escombraries."}, {es:"Limpio",ca:"Net"}, {es:"Espacio libre de basura.", ca:"Espai lliure d'escombraries."}, "h",0,0, false));                                                                             
+                                    </script>		
+                                    
+                                    <div class="legend">						
+                                        <div class="legend_icons_numbers">
+                                            <label class="icons_number">1</label>
+                                            <label class="icons_number">2</label>
+                                            <label class="icons_number">3</label>
+                                            <label class="icons_number">4</label>
+                                            <label class="icons_number">5</label>
+                                        </div>
+                                    </div>
+                                    <br />
+                                </div>
+
+                                <div id="points0"></div>
+                            </div>
+
+                            <div>
+
+                                <div class="map_info_container">
+
+                                    <p id="map_error0" class="info_map error">
+                                        <span class="es">Haz zoom para acercarte al lugar donde quieres situar el símbolo. Se activará la función y te permitirá arrastrar el símbolo</span>
+                                        <span class="ca d-none">Fes zoom per apropar-te a el lloc on vols situar el símbol. S'activarà la funció i et permetrà arrossegar el símbol</span>
+                                    </p>
+                                    <p id="map_info0" class="info_map info">
+                                        <span class="es">Zoom correcto</span>
+                                        <span class="ca d-none">Zoom correcte</span>
+                                    </p>
+                                </div>
+
+                                <div id="map-canvas0" class="map_canvas large_map">
+                                </div>
+                            </div>
+
+                            <br style="clear:left">
+
+
+                            <!-- END MAP -->
+
+                        </div>
+                        <div id="question-map1" class="form-group">
+                            <label class="control-label title" for="actividades_recreativas">11.
+                                <span class="es">Indique las actividades recreativas que realiza o ha realizado y valórelas</span>
+                                <span class="ca d-none">Indiqui les activitats recreatives que realitza o ha realitzat i valori-les</span>
+                            </label>
+                            <input type="text" class="form-control" id="actividades_recreativas" name="actividades_recreativas" style='visibility:hidden' />
+
+
+                            <!-- INIT MAP -->
+
+                            <div class="controls">
+                                <div class="pinWrapper">
+
+                                    <div class="legend position-relative">
+                                        <div class="legend-litle es">Poco satisfecho</div>
+                                        <div class="legend-litle ca d-none">Poc satisfet</div>
+
+                                        <div class="legend-a-lot es">Muy satisfecho</div>
+                                        <div class="legend-a-lot ca d-none">Molt satisfet</div>
+
+                                        <div class="legend_icons_numbers">
+                                            <label class="icons_number">1</label>
+                                            <label class="icons_number">2</label>
+                                            <label class="icons_number">3</label>
+                                            <label class="icons_number">4</label>
+                                            <label class="icons_number">5</label>
+                                        </div>
+                                    </div>
+
+                                    <div id="map_inputs_1"></div>
+                                    
+                                    <script>					
+
+                                        document.getElementById("map_inputs_1").appendChild(createMapInput({es:"Ciclismo", ca:"Ciclisme"}, {es:"", ca:""}, null, null, "a",1,0, false));
+                                        document.getElementById("map_inputs_1").appendChild(createMapInput({es:"Senderismo", ca:"Senderisme"}, {es:"", ca:""}, null, null, "b",1,0, false));
+                                        document.getElementById("map_inputs_1").appendChild(createMapInput({es:"Correr", ca:"Córrer"}, {es:"", ca:""}, null, null, "c",1,0, false));
+                                        document.getElementById("map_inputs_1").appendChild(createMapInput({es:"Patinaje o patinete", ca:"Patinatge o patinet"}, {es:"", ca:""}, null, null, "d",1,0, false));
+                                        document.getElementById("map_inputs_1").appendChild(createMapInput({es:"Relajarse, observar flora y fauna", ca:"Relaxar-se, observar flora i fauna"}, {es:"", ca:""}, null, null, "e",1,0, false));
+                                        document.getElementById("map_inputs_1").appendChild(createMapInput({es:"Tomar fotografías", ca:"Fer fotografies"}, {es:"", ca:""}, null, null, "f",1,0, false));
+                                        document.getElementById("map_inputs_1").appendChild(createMapInput({es:"Otras actividades", ca:"Altres activitats"}, {es:"", ca:""}, null, null, "g",1,0, false));                                        
+                                        
+                                    </script>		
+                                    
+                                    <div class="legend">						
+                                        <div class="legend_icons_numbers">
+                                            <label class="icons_number">1</label>
+                                            <label class="icons_number">2</label>
+                                            <label class="icons_number">3</label>
+                                            <label class="icons_number">4</label>
+                                            <label class="icons_number">5</label>
+                                        </div>
+                                    </div>
+                                    <br />
+                                </div>
+
+                                <div id="points1"></div>
+                            </div>
+
+                            <div>
+
+                                <div class="map_info_container">
+
+                                    <p id="map_error1" class="info_map error">
+                                        <span class="es">Haz zoom para acercarte al lugar donde quieres situar el símbolo. Se activará la función y te permitirá arrastrar el símbolo</span>
+                                        <span class="ca d-none">Fes zoom per apropar-te a el lloc on vols situar el símbol. S'activarà la funció i et permetrà arrossegar el símbol</span>
+                                    </p>
+                                    <p id="map_info1" class="info_map info">
+                                        <span class="es">Zoom correcto</span>
+                                        <span class="ca d-none">Zoom correcte</span>
+                                    </p>
+                                </div>
+
+                                <div id="map-canvas1" class="map_canvas large_map">
+                                </div>
+                            </div>
+
+                            <br style="clear:left">
+
+                            <!-- END MAP -->
+
+
+                        </div>
+                        <div id="question-map2" class="form-group">
+                            <label class="control-label title" for="adecuacion_equipamientos">12.
+                                <span class="es">Valore la adecuación de los equipamientos y servicios</span>
+                                <span class="ca d-none">Valori l'adequació dels equipaments i serveis</span>
+                            </label>
+                            <input type="text" class="form-control" id="adecuacion_equipamientos" name="adecuacion_equipamientos" style='visibility:hidden' />
+
+
+                            <!-- INIT MAP -->
+                            <div class="controls">
+                                <div class="pinWrapper">
+
+                                    <div class="legend position-relative">
+                                        <div class="legend-litle es">Poco satisfecho</div>
+                                        <div class="legend-litle ca d-none">Poc satisfet</div>
+
+                                        <div class="legend-a-lot es">Muy satisfecho</div>
+                                        <div class="legend-a-lot ca d-none">Molt satisfet</div>
+
+                                        <div class="legend_icons_numbers">
+                                            <label class="icons_number">1</label>
+                                            <label class="icons_number">2</label>
+                                            <label class="icons_number">3</label>
+                                            <label class="icons_number">4</label>
+                                            <label class="icons_number">5</label>
+                                        </div>
+                                    </div>
+
+                                    <div id="map_inputs_2"></div>
+                                    
+                                    <script>					
+
+                                        document.getElementById("map_inputs_2").appendChild(createMapInput({es:"Accesibilidad", ca:"Accessibilitat"}, {es:"facilidad de acceso a lugares de interés natural, cultural o de recreación al aire libre", ca:"Facilitat d'accés a llocs d'interès natural, cultural o de recreació a l'aire lliure."}, null, null, "a",2,0, false));                                        
+                                        document.getElementById("map_inputs_2").appendChild(createMapInput({es:"Seguridad", ca:"Seguretat"}, {es:"Sentimiento de protección o seguridad personal estando en el lugar.", ca:"Sentiment de protecció o seguretat personal estant en el lloc."}, null, null, "b",2,0, false));                                        
+                                        document.getElementById("map_inputs_2").appendChild(createMapInput({es:"Equipamientos para la recreación", ca:"Equipaments per a la recreació"}, {es:"Existencia de parques lúdicos e infantiles, senderos/carriles ciclistas, áreas de descanso/picnic, miradores, etc.", ca:"Existència de parcs lúdics i infantils, senders / carrils ciclistes, àrees de descans / pícnic, miradors, etc."}, null, null, "c",2,0, false));                                        
+                                        document.getElementById("map_inputs_2").appendChild(createMapInput({es:"Equipamientos informativos", ca:"Equipaments informatius"}, {es:"Existencia de señalización, paneles informativos, mapas, carteles de localización de senderos, etc.", ca:"Existència de senyalització, panells informatius, mapes, cartells de localització de senders, etc."}, null, null, "d",2,0, false));                                        
+                                        document.getElementById("map_inputs_2").appendChild(createMapInput({es:"Patrimonio cultural e identitario", ca:"Patrimoni cultural i identitari"}, {es:"Existencia de monumentos históricos, edificios e infraestructuras culturales, restos arqueológicos, etc.", ca:"Existència de monuments històrics, edificis i infraestructures culturals, restes arqueològiques, etc."}, null, null, "e",2,0, false));                                                                                
+                                        document.getElementById("map_inputs_2").appendChild(createMapInput({es:"Lugares religiosos y/o simbólicos", ca:"Llocs religiosos i/o simbòlics"}, {es:"Existencia de edificios religiosos o espacios sagrados, etc.", ca:"Existència d'edificis religiosos o espais sagrats, etc."}, null, null, "f",2,0, false));                                        
+                                        document.getElementById("map_inputs_2").appendChild(createMapInput({es:"Otros", ca:"Altres"}, {es:"", ca:""}, null, null, "g",2,0, false));                                                                               
+                                        
+                                    </script>		
+                                    
+                                    <div class="legend">						
+                                        <div class="legend_icons_numbers">
+                                            <label class="icons_number">1</label>
+                                            <label class="icons_number">2</label>
+                                            <label class="icons_number">3</label>
+                                            <label class="icons_number">4</label>
+                                            <label class="icons_number">5</label>
+                                        </div>
+                                    </div>
+                                    <br />
+                                </div>
+
+                                <div id="points2"></div>
+                            </div>
+
+                            <div>
+
+                                <div class="map_info_container">
+
+                                    <p id="map_error2" class="info_map error">
+                                        <span class="es">Haz zoom para acercarte al lugar donde quieres situar el símbolo. Se activará la función y te permitirá arrastrar el símbolo</span>
+                                        <span class="ca d-none">Fes zoom per apropar-te a el lloc on vols situar el símbol. S'activarà la funció i et permetrà arrossegar el símbol</span>
+                                    </p>
+                                    <p id="map_info2" class="info_map info">
+                                        <span class="es">Zoom correcto</span>
+                                        <span class="ca d-none">Zoom correcte</span>
+                                    </p>
+                                </div>
+
+                                <div id="map-canvas2" class="map_canvas large_map">
+                                </div>
+                            </div>
+
+                            <br style="clear:left">
+
+                            <!-- END MAP -->
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label title" for="conflictos_potenciales">13.
+                                <span class="es">Valore los conflictos potenciales de uso público y recreación al aire libre</span>
+                                <span class="ca d-none">Valori els conflictes potencials d'ús públic i recreació a l'aire lliure</span>
+                            </label>
+                            <input type="text" class="form-control" id="conflictos_potenciales" name="conflictos_potenciales" style='visibility:hidden' />
+
+
+
+
+                            <!-- INIT MAP -->
+                            <div class="controls">
+                                <div class="pinWrapper">
+
+                                    <div class="legend position-relative">
+                                        <div class="legend-litle es">Conflicto grave</div>
+                                        <div class="legend-litle ca d-none">Conflicte greu</div>
+
+                                        <div class="legend-a-lot es">Conflicto leve</div>
+                                        <div class="legend-a-lot2 ca d-none">Conflicte lleu</div>
+
+                                        <div class="legend_icons_numbers">
+                                            <label class="icons_number">1</label>
+                                            <label class="icons_number">2</label>
+                                            <label class="icons_number">3</label>
+                                            <label class="icons_number">4</label>
+                                            <label class="icons_number">5</label>
+                                        </div>
+                                    </div>
+
+                                    <div id="map_inputs_3"></div>
+
+                                    <script>
+                                        document.getElementById("map_inputs_3").appendChild(createMapInput({es:"Demasiados usuarios", ca:"Massa usuaris"}, {es:"espacios congestionados o con mucha coincidencia de actividades recreativas al aire libre.", ca:"espais congestionats o amb molta coincidència d'activitats recreatives a l'aire lliure."}, null, null, "a",3,0, false));
+                                        document.getElementById("map_inputs_3").appendChild(createMapInput({es:"Senderos/viales con problemas", ca:"Senders/vials amb problemes"}, {es:"senderos o caminos con problemas de uso público como pavimento en mal estado, mala señalización, etc.", ca:"senders o camins amb problemes d'ús públic com el paviment en mal estat, mala senyalització, etc."}, null, null, "b",3,2, false));
+                                        document.getElementById("map_inputs_3").appendChild(createMapInput({es:"Conflictos entre diferentes actividades", ca:"Conflictes entre diferents activitats"}, {es:"lugares en donde existe una problemática entre diferentes tipos de usuario o entre diferentes actividades recreativas como ciclismo, senderismo, etc.", ca:"llocs on hi ha una problemàtica entre diferents tipus d'usuari o entre diferents activitats recreatives com ciclisme, senderisme, etc."}, null, null, "c",3,3, false));
+                                        document.getElementById("map_inputs_3").appendChild(createMapInput({es:"Actos incívicos y otros conflictos", ca:"Actes incívics i altres conflictes"}, {es:"lugares en donde se producen habitualmente acciones indebidas como vandalismo, exceso de velocidad, omisión de la distancia de seguridad, etc.", ca:"llocs on es produeixen habitualment accions indegudes com vandalisme, excés de velocitat, omissió de la distància de seguretat, etc."}, null, null, "d",3,0, false));
+                                    </script>
+
+
+                                    <div class="legend">
+                                        <div class="legend_icons_numbers">
+                                            <label class="icons_number">1</label>
+                                            <label class="icons_number">2</label>
+                                            <label class="icons_number">3</label>
+                                            <label class="icons_number">4</label>
+                                            <label class="icons_number">5</label>
+                                        </div>
+                                    </div>
+
+                                    <br />
+                                </div>
+
+                                <div id="points3"></div>
+                            </div>
+
+                            <div>
+                                <div class="map_info_container">
+
+                                    <p id="map_error3" class="info_map error">
+                                        <span class="es">Haz zoom para acercarte al lugar donde quieres situar el símbolo. Se activará la función y te permitirá arrastrar el símbolo</span>
+                                        <span class="ca d-none">Fes zoom per apropar-te a el lloc on vols situar el símbol. S'activarà la funció i et permetrà arrossegar el símbol</span>
+                                    </p>
+                                    <p id="map_info3" class="info_map info">
+                                        <span class="es">Zoom correcto</span>
+                                        <span class="ca d-none">Zoom correcte</span>
+                                    </p>
+
+                                </div>
+
+                                <div id="map-canvas3" class="map_canvas large_map">
+                                </div>
+                            </div>
+
+                            <br style="clear:left">
+
+                            <!-- END MAP -->
+
+
+                        </div>
+                        <div id="container_pertenece_entidad" class="form-group">
+                            <label class="control-label title" for="pertenece_entidad"><span class="required">*</span>14.
+                                <span class="es">¿Pertenece usted a alguna asociación/entidad que desarrolle algún tipo de actividad en la zona de estudio?</span>
+                                <span class="ca d-none">Pertany vostè a alguna associació/entitat que desenvolupi algun tipus d'activitat a la zona d'estudi?</span>
+                            </label>
+                            <p id="error_pertenece_entidad" class="pl-4 d-none error"></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pertenece_entidad" id="si" value="si">
+                                <label class="form-check-label" for="si">
+                                    <span class="es">Si</span>
+                                    <span class="ca d-none">Si</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pertenece_entidad" id="no" value="no">
+                                <label class="form-check-label" for="no">
+                                    <span class="es">No</span>
+                                    <span class="ca d-none">No</span>
+                                </label>
+                            </div>
+                            <div class="form-inline d-none" id="entidad">
+                                <label class="control-label title" for="nombre_entidad">
+                                    <span class="es">En caso afirmativo especifique el nombre de la entidad:</span>
+                                    <span class="ca d-none">En cas afirmatiu especifiqui el nom de la entitat:</span>
+                                </label>
+                                <input type="text" class="ml-2 form-control col" id="nombre_entidad" name="nombre_entidad" placeholder="Introduzca su respuesta" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label title" for="acciones_mejorar">15.
+                                <span class="es">¿Qué acciones se podrían llevar a cabo para mejorar la realización de actividades recreativas y reducir los conflictos de uso público en la zona?</span>
+                                <span class="ca d-none">Quines accions es podrien dur a terme per millorar la realització d'activitats recreatives i reduir els conflictes d'ús públic a la zona?</span>
+                            </label>
+                            <textarea rows="5" cols="30" class="form-control" id="acciones_mejorar" name="acciones_mejorar" placeholder="Introduzca su respuesta" value=""></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label title" for="observaciones">16.
+                                <span class="es">Observaciones finales:</span>
+                                <span class="ca d-none">Observacions finals:</span>
+                            </label>
+                            <textarea rows="5" cols="30" class="form-control" id="observaciones" name="observaciones" placeholder="Introduzca su respuesta" value=""></textarea>
+                        </div>
+                        <input type="submit" onclick="return parseDataPoints();" id="enviar" name="submit" class="btn btn-block btn-primary" value="Enviar" />
+                    </form>
+                </div>
+                <div id="exito" class="col-12 text-center d-none">
+                    <h2 class="my-4">
+                        <span class="es">¡Muchas gracias por completar la encuesta!</span>
+                        <span class="ca d-none">Moltes gràcies per completar l'enquesta!</span>
+                    </h2>
+                    <p>
+                        <span class="es">Para cualquier duda, aclaración o incidencia que haya tenido puede contactar directamente con nosotros a través de la siguiente dirección de correo electrónico: <a href="mailto:chora.project@urv.cat"><b>chora.project@urv.cat</b></a></span>
+                        <span class="ca d-none">Per a qualsevol dubte, aclariment o incidència que hagi tingut pot contactar directament amb nosaltres a través de la següent adreça de correu electrònic: <a href="mailto:chora.project@urv.cat"><b>chora.project@urv.cat</b></a></span>
+                    </p>
+                    <p>
+                        <span class="es">Cuando finalice el período activo de la encuesta y en caso que haya anotado su correo electrónico, recibirá los resultados agregados junto con el resultado del sorteo.</span>
+                        <span class="ca d-none">Quan finalitzi el període actiu de l'enquesta i en cas que hi hagi anotat el seu correu electrònic, rebrà els resultats agregats juntament amb el resultat del sorteig.</span>
+                    </p>
+                </div>
+                <!-- <div class="mt-5 col-12 text-center">
+                    <p class="es"><a href="">Política de privacidad</a> y <a href="">Cookies</a></p>
+                    <p class="ca d-none"><a href="">Política de privacitat</a> i <a href="">Cookies</a></p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+<div class="modal modal-danger fade" id="modal-error" tabindex="-1" role="dialog" aria-labelledby="Delete" aria-hidden="true">
+    <div class="modal-dialog c-modal-dialog" role="document">
+        <div class="modal-content c-modal-content position-relative">
+            <div class="modal-header position-absolute" style="border-bottom: 1px solid transparent!important; top: -60px; right: 0;">
+                <button type="button" class="close text-white" style="font-size: 40px" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-dark" style="overflow-y: auto; min-height: auto; max-height: calc(100vh - 80px);">
+
+                <h3 id="modal-title-error" class="pt-4 modal-title title-modal-primary"></h3>
+                <p id="modal-subtitle-error" class="my-3"></p>
+                
+            </div>
+        </div>
+    </div>
+</div>
