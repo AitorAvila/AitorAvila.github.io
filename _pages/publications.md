@@ -4,7 +4,7 @@ title: ""
 permalink: /publications/
 author_profile: true
 header: 
-  image: /publications_header2.jpg
+  image: /header_publications.jpg
 ---
 
 ![header2](/images/publications4.png)
