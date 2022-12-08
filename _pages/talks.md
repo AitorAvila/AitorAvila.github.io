@@ -7,7 +7,7 @@ header:
   image: /header_talks_bo.jpg
 ---
 
-<img src="/images/talks.png">
+<img src="/images/talks_defi.png">
 
 ## Conference talks
 
