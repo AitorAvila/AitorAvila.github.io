@@ -7,7 +7,7 @@ header:
   image: /header_publications.jpg
 ---
 
-![header2](/images/publications4.png)
+![header2](/images/publications_defi.png)
 
 ## Articles
 
