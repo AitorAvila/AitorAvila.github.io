@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 header:
-  image: /header_cv.jpg
+  image: /header_cv_bo.jpg
 ---
 
 
