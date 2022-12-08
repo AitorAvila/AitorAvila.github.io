@@ -7,7 +7,7 @@ redirect_from:
   - /markdown.html
 ---
 
-![header](/images/contact.png)
+![header](/images/contact_defi.png)
 
 ## e-mail 
 <a href="mailto:aitor.avila@urv.cat">aitor.avila@urv.cat</a>
