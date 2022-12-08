@@ -10,7 +10,7 @@ header:
 ---
 
 
-![cv](/images/cv.png)
+![cv](/images/cv_defi.png)
 
 ## Education
 
