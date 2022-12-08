@@ -4,7 +4,7 @@ title: ""
 permalink: /talks/
 author_profile: true
 header:
-  image: /header_talks.jpg
+  image: /header_talks_bo.jpg
 ---
 
 <img src="/images/talks.png">
