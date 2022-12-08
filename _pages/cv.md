@@ -14,7 +14,7 @@ header:
 
 ## Education
 
-- Ph.D in Geography. Doctoral Program of City, Territory and Sustainable Planning. _Universitat Rovira i Virgili. 2023 (expected)_
+- Ph.D in Geography. Doctoral Program of City, Territory and Sustainable Planning. _Universitat Rovira i Virgili. 2022_
 - Official Master in Remote Sensing and Geographic Information Systems. _Universitat Autònoma de Barcelona. 2018_
 - Degree in Geography and Spatial Planning. Mention in Territorial Planning and Local Development. _Universitat Rovira i Virgili. 2017_
   
