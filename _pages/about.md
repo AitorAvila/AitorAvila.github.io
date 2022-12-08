@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 header:
-  image: /header3.jpg
+  image: /header_about.jpg
 ---
 
 ![paisaje](images/about3.png)
