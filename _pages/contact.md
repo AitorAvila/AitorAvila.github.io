@@ -33,4 +33,13 @@ __Geographical coordinates__ (_Google Maps_):
 
 
 
-console.log(<iframe src="https://www.google.com/maps/d/embed?mid=1hJNrhdswmzMeeTN1WHKhwPuA3hnhxFY&ehbc=2E312F" width="640" height="480"></iframe>)
+<label for="clima">Seleccione el tipo de clima de hoy: </label>
+<select id="clima">
+  <option value="">--Haga una elección--</option>
+  <option value="soleado">Soleado</option>
+  <option value="lluvioso">Lluvioso</option>
+  <option value="nevando">Nevando</option>
+  <option value="nublado">Nublado</option>
+</select>
+
+<p></p>
