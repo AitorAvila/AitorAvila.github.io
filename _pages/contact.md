@@ -33,37 +33,45 @@ __Geographical coordinates__ (_Google Maps_):
 
 
 
-<label for="clima">Seleccione el tipo de clima de hoy: </label>
-<select id="clima">
-  <option value="">--Haga una elección--</option>
-  <option value="soleado">Soleado</option>
-  <option value="lluvioso">Lluvioso</option>
-  <option value="nevando">Nevando</option>
-  <option value="nublado">Nublado</option>
-</select>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Simple else if example</title>
+  </head>
+  <body>
+    <label for="weather">Select the weather type today: </label>
+    <select id="weather">
+      <option value="">--Make a choice--</option>
+      <option value="sunny">Sunny</option>
+      <option value="rainy">Rainy</option>
+      <option value="snowing">Snowing</option>
+      <option value="overcast">Overcast</option>
+    </select>
 
-<p>
-</p>
+    <p></p>
 
-<script>
-let seleccionar = document.querySelector('select');
-let parrafo = document.querySelector('p');
+    <script>
+      const select = document.querySelector('select');
+      const para = document.querySelector('p');
 
-seleccionar.addEventListener('change', establecerClima);
+      select.onchange = setWeather;
 
-function establecerClima() {
-  let eleccion = seleccionar.value;
+      function setWeather() {
+        const choice = select.value;
 
-  if (eleccion === 'soleado') {
-    parrafo.textContent = 'El día esta agradable y soleado hoy. ¡Use pantalones cortos! Ve a la playa o al parque y come un helado.';
-  } else if (eleccion === 'lluvioso') {
-    parrafo.textContent = 'Está lloviendo, tome un abrigo para lluvia y un paraguas, y no se quede por fuera mucho tiempo.';
-  } else if (eleccion === 'nevando') {
-    parrafo.textContent = 'Está nevando ─ ¡está congelando! Lo mejor es quedarse en casa con una taza caliente de chocolate, o hacer un muñeco de nieve.';
-  } else if (eleccion === 'nublado') {
-    parrafo.textContent = 'No está lloviendo, pero el cielo está gris y nublado; podría llover en cualquier momento, así que lleve un saco solo por si acaso.';
-  } else {
-    parrafo.textContent = '';
-  }
-}
-</script>
+        if(choice === 'sunny') {
+          para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+        } else if(choice === 'rainy') {
+          para.textContent = 'Rain is falling outside; take a rain coat and a brolly, and don\'t stay out for too long.';
+        } else if(choice === 'snowing') {
+          para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+        } else if(choice === 'overcast') {
+          para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+        } else {
+          para.textContent = '';
+        }
+      }
+    </script>
+  </body>
+</html>
