@@ -44,6 +44,8 @@ __Geographical coordinates__ (_Google Maps_):
 
 <p>
 </p>
+
+<script>
 let seleccionar = document.querySelector('select');
 let parrafo = document.querySelector('p');
 
@@ -64,3 +66,4 @@ function establecerClima() {
     parrafo.textContent = '';
   }
 }
+</script>
