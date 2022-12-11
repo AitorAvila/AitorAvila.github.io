@@ -42,7 +42,9 @@ __Geographical coordinates__ (_Google Maps_):
   <option value="nublado">Nublado</option>
 </select>
 
-<p>let seleccionar = document.querySelector('select');
+<p>
+</p>
+let seleccionar = document.querySelector('select');
 let parrafo = document.querySelector('p');
 
 seleccionar.addEventListener('change', establecerClima);
@@ -62,4 +64,3 @@ function establecerClima() {
     parrafo.textContent = '';
   }
 }
-</p>
